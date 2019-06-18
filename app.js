@@ -9,7 +9,9 @@ new Vue({
         website: 'http://123.com',
         websiteTag: '<a href="http://234.com">T Website</a>',
         Name: '',
-        Age: ''
+        Age: '',
+        a: 0,
+        b: 0,
     },
     methods: {
         greet: function(time){
@@ -37,6 +39,19 @@ new Vue({
         logAge: function () {
             console.log('you entered your age')
         },
-
+        // addToA: function () {
+        //     return this.a + this.age
+        // },
+        // addToB: function () {
+        //     return this.b + this.age
+        // 
+    },
+    computed: {
+        addToA: function () {
+            return this.a + this.age
+        },
+        addToB: function () {
+            return this.b + this.age
+        }
     }
 });
