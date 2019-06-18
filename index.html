@@ -56,7 +56,19 @@
         
         <p>Age + A = {{ addToA }}</p>
         <p>Age + B = {{ addToB }}</p>
-    
+
+        <h1>Dynamic CSS</h1>
+        <h2>Example 1</h2>
+        <!-- <div v-on:click ="available = !available" v-bind:class="{available: available}">
+            <span>Temi</span>
+        </div> -->
+
+        <h2>Example 2</h2>
+        <button v-on:click="nearby = !nearby">Toggle Nearby</button>
+        <button v-on:click="available = !available">Toggle available</button>
+        <div v-bind:class="compClasses">
+            <span>Tope</span>
+        </div>
     </div>
     
     <script src="app.js"></script>

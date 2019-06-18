@@ -12,6 +12,8 @@ new Vue({
         Age: '',
         a: 0,
         b: 0,
+        available: false,
+        nearby: false,
     },
     methods: {
         greet: function(time){
@@ -52,6 +54,12 @@ new Vue({
         },
         addToB: function () {
             return this.b + this.age
+        },
+        compClasses: function() {
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
         }
     }
 });
