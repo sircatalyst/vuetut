@@ -38,6 +38,18 @@
         <input type="text" v-on:keyup.enter="logName"> 
         <label>Age:</label>
         <input type="text" v-on:keyup.alt.enter="logAge">
+        
+        <h1>Two Way Data Binding</h1>
+        <label>Name:</label>
+        <input type="text" v-model="Name"> 
+        <span>{{Name}}</span>
+
+        <label>Age:</label>
+        <input type="text" v-model="Age">
+        <span>{{Age}}</span>
+    
+        
+    
     </div>
     
     <script src="app.js"></script>

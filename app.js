@@ -7,7 +7,9 @@ new Vue({
         name: 'Shaun',
         job: 'Ninja',
         website: 'http://123.com',
-        websiteTag: '<a href="http://234.com">T Website</a>'
+        websiteTag: '<a href="http://234.com">T Website</a>',
+        Name: '',
+        Age: ''
     },
     methods: {
         greet: function(time){
@@ -34,6 +36,7 @@ new Vue({
         },
         logAge: function () {
             console.log('you entered your age')
-        }
+        },
+
     }
 });
