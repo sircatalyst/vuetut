@@ -137,6 +137,13 @@
         <greeting></greeting>
     </div>
     
+    <div id="vue-app-five">
+        <h1>Refs</h1>
+        <input type="text" ref="input">
+        <button v-on:click="readRefs">Submit</button>
+        <p>Your fav food: {{ output }}</p>
+        <div ref='test'>hello</div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

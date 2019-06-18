@@ -149,3 +149,20 @@ new Vue ({
 
     }
 });
+
+new Vue ({
+    el: "#vue-app-five",
+    data: {
+        output: "your fav food",
+    },
+    methods:{
+        readRefs: function() {
+           console.log(this.$refs.input.value);
+           this.output = this.$refs.input.value;
+           this.output = this.$refs.test.innerText;
+        }
+    },
+    computed:{
+
+    }
+});
